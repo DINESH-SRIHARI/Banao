@@ -1,0 +1,134 @@
+.search{
+  background-color: blueviolet;
+  margin-left: -50px;
+}
+.bar{
+  width: 300px;
+}
+.white{
+  background-color: white !important;
+}
+.icon{
+  background-color: blueviolet;
+}
+.items{
+  display: inline-block;
+}
+.btnb{
+  margin-left: -30px;
+}
+.head{
+  border: 3px solid blueviolet;
+}
+
+.inpt{
+  width: 70%;
+}
+.my{
+  margin-top: -18px;
+  margin-left: 6px;
+}
+.purple{
+  color: blueviolet;
+}
+
+.footer{
+  height: 80px;
+  background-color: rgb(173, 168, 168);
+  padding: 10px;
+}
+.social{
+  margin-left: 200px;
+}
+
+.purbtn{
+  border:none;
+  background-color: blueviolet;
+}
+.font-italic{
+  font-style: italic;
+}
+.outline{
+  border: 1px solid blueviolet;
+}
+.top{
+  background-color: rgb(213, 226, 238);
+}
+.margin{
+  margin-left: 70px;
+}
+.mt{
+  margin-top: 10px;
+}
+.aline{
+  align-items: center;
+}
+
+.tfw{
+  font-weight: 600;
+  color: black;
+}
+.colt{
+  color: blueviolet;
+  border-bottom: 3px solid blueviolet;
+}
+.People:hover{
+  background-color: rgb(155, 86, 219);
+  color: aliceblue;
+}
+.Place:hover{
+  background-color: rgb(88, 230, 88);
+  color: aliceblue;
+}
+.Product:hover{
+  background-color: rgb(228, 88, 100);
+  color: aliceblue;
+}
+.Program:hover{
+  background-color: rgb(140, 133, 235);
+  color: aliceblue;
+}
+.imgrou{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+ 
+}
+.gap{
+  margin-left: 400px;
+  width: 100px;
+  height: 100px;
+}
+@media (max-width:430px) {
+  .ser{
+    display: none;
+  }
+  .teho{
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  .imgb{
+    width: 200px;
+  }
+  .imgt{
+    width: 100px;
+  }
+}
+@media (min-width:430px) {
+  .ser{
+    display: block;
+  }
+  .teho{
+    margin-top: 10px;
+    margin-left: 500px;
+  }
+  .imgb{
+    width: 500px;
+  }
+  .flex{
+    display: flex;
+  }
+  .imgt{
+    width: 340px;
+  }
+}
