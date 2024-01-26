@@ -1,74 +1,148 @@
-function Nav(){
-    return (
-        <div>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary white">
-  <div className="container-fluid" >
-    
-  <a class="navbar-brand mx-5" href="#">
-    <div className="d-flex">
-        <div>
-            <h1 className="text-primary font-italic head px-3 m-0">h</h1>
-        </div>
-        <div>
-            <h3><span className="text-primary font-italic my">hobby</span><span className="purple font-italic">cue</span></h3>
-            <p className="text-muted font-italic my">your hobby,your community</p>
-        </div>
-    </div>
-      
-    </a>
-    <form className="d-flex mx-5 " role="search">
-        <input className="form-control me-2 bar ser" type="search" placeholder="Search here...." aria-label="Search"/>
-        <button className="btn search" type="submit" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-</svg></button>
-      </form>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
-  <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
-  <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
-</svg>Explore
+import logo from '../images/HobbyCue Logo.png'
+function Nav() {
+  return (
+    <div className="nav">
+      <nav className="navbar navbar-expand-lg ">
+        <div className="container-fluid">
+          <a href="#">
+            <img src={logo} className="logo" />
           </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">People-Community</a></li>
-            <li><a className="dropdown-item" href="#">Places-Venues</a></li>
-            <li><a className="dropdown-item" href="#">Programs-Events</a></li>
-            <li><a className="dropdown-item" href="#">Products-Store</a></li>
-            <li><a className="dropdown-item" href="#">Blog</a></li>
-          </ul>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle text-dark items" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>Hobbies
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">People-Community</a></li>
-            <li><a className="dropdown-item" href="#">Places-Venues</a></li>
-            <li><a className="dropdown-item" href="#">Programs-Events</a></li>
-            <li><a className="dropdown-item" href="#">Products-Store</a></li>
-            <li><a className="dropdown-item" href="#">Blog</a></li>
-          </ul>
-        </li>
-        <li className="mx-3 my-1">
-        <svg xmlns="http://www.w3.org/2000/svg" height="26" width="24" viewBox="0 0 384 512"><path fill="#7e16b6" d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"/></svg>
-        </li>
-        <li className="mx-3"><svg xmlns="http://www.w3.org/2000/svg" height="36" width="24" viewBox="0 0 448 512"><path fill="#7e16b6" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg></li>
-        <li className="mx-3"><svg xmlns="http://www.w3.org/2000/svg" height="38" width="24" viewBox="0 0 576 512"><path fill="#7e16b6" d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></li>
-      </ul>
-      <button className="btn purple outline mx-3">sign in</button>
-      
-    </div>
-  </div>
-</nav>
+          <form className="d-flex">
+            <input
+              className="nav-input"
+              type="search"
+              placeholder="Search here...."
+              aria-label="Search"
+            />
+            <button className="nav-ser">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="nav-svg"
+              >
+                <path
+                  d="M6.83333 2C4.17185 2 2 4.17185 2 6.83333C2 9.49481 4.17185 11.6667 6.83333 11.6667C7.92439 11.6667 8.92964 11.2977 9.74023 10.6836L12.862 13.8047C12.9234 13.8687 12.997 13.9198 13.0784 13.9549C13.1598 13.9901 13.2474 14.0087 13.3361 14.0096C13.4248 14.0105 13.5128 13.9937 13.5949 13.9602C13.6771 13.9267 13.7517 13.8771 13.8144 13.8144C13.8771 13.7517 13.9267 13.6771 13.9602 13.5949C13.9937 13.5128 14.0105 13.4248 14.0096 13.3361C14.0087 13.2474 13.9901 13.1598 13.9549 13.0784C13.9198 12.997 13.8687 12.9234 13.8047 12.862L10.6836 9.74023C11.2977 8.92964 11.6667 7.92439 11.6667 6.83333C11.6667 4.17185 9.49481 2 6.83333 2ZM6.83333 3.33333C8.77423 3.33333 10.3333 4.89244 10.3333 6.83333C10.3333 7.76524 9.97135 8.60687 9.38281 9.23242C9.32552 9.2739 9.2752 9.32422 9.23372 9.38151C8.60803 9.9708 7.7659 10.3333 6.83333 10.3333C4.89244 10.3333 3.33333 8.77423 3.33333 6.83333C3.33333 4.89244 4.89244 3.33333 6.83333 3.33333Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </form>
+          
+          <div className="d-flex" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle text-dark nav-explo"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0.0390625C4.49875 0.0390625 0.0390625 4.49875 0.0390625 10C0.0390625 15.5013 4.49875 19.9609 10 19.9609C15.5013 19.9609 19.9609 15.5013 19.9609 10C19.9609 4.49875 15.5013 0.0390625 10 0.0390625ZM14.7405 5.83656L12.0142 11.7991C11.9706 11.8942 11.8942 11.9706 11.7991 12.0142L5.83656 14.7405C5.46953 14.9083 5.09172 14.53 5.25906 14.163L7.98531 8.20047C8.02891 8.10531 8.10531 8.02891 8.20047 7.98531L14.163 5.25906C14.53 5.09172 14.9083 5.47 14.7405 5.83656Z" fill="#8064A2"/>
+<path d="M10.7355 9.85321C10.7303 9.82931 10.7242 9.8054 10.7172 9.78196C10.7102 9.759 10.7017 9.73556 10.6923 9.71306C10.683 9.69056 10.6727 9.66806 10.6614 9.6465C10.6497 9.62493 10.637 9.60384 10.6234 9.58368C10.6098 9.56306 10.5953 9.54337 10.5798 9.52415C10.5644 9.5054 10.5475 9.48712 10.5302 9.46978C10.5128 9.45243 10.4945 9.43556 10.4758 9.42009C10.4566 9.40462 10.4369 9.39009 10.4163 9.3765C10.3961 9.3629 10.375 9.35025 10.3534 9.33853C10.3319 9.32728 10.3094 9.3165 10.2869 9.30759C10.2644 9.29821 10.2409 9.28978 10.218 9.28275C10.1945 9.27525 10.1706 9.26915 10.1467 9.26447C10.1223 9.25978 10.098 9.25603 10.0736 9.25368C10.0248 9.24853 9.97516 9.24853 9.92641 9.25368C9.90203 9.25603 9.87766 9.25978 9.85328 9.26447C9.82937 9.26915 9.80547 9.27525 9.78203 9.28275C9.75906 9.28978 9.73563 9.29821 9.71313 9.30759C9.69063 9.3165 9.66813 9.32728 9.64656 9.33853C9.625 9.35025 9.60391 9.3629 9.58375 9.3765C9.56312 9.39009 9.54344 9.40462 9.52422 9.42009C9.50547 9.43556 9.48672 9.45243 9.46984 9.46978C9.4525 9.48712 9.43563 9.5054 9.42016 9.52415C9.40469 9.54337 9.38969 9.56306 9.37656 9.58368C9.36297 9.60384 9.35031 9.62493 9.33859 9.6465C9.32734 9.66806 9.31656 9.69056 9.30766 9.71306C9.29828 9.73556 9.28984 9.759 9.28281 9.78196C9.27531 9.8054 9.26922 9.82931 9.26453 9.85321C9.25984 9.87759 9.25609 9.90196 9.25375 9.92634C9.25141 9.95071 9.25 9.97556 9.25 9.99993C9.25 10.0243 9.25141 10.0492 9.25375 10.0735C9.25609 10.0979 9.25984 10.1223 9.26453 10.1467C9.26922 10.1706 9.27531 10.1945 9.28281 10.2179C9.28984 10.2409 9.29828 10.2643 9.30766 10.2868C9.31656 10.3093 9.32734 10.3318 9.33859 10.3534C9.35031 10.3749 9.36297 10.396 9.37656 10.4162C9.39016 10.4368 9.40469 10.4565 9.42016 10.4757C9.43563 10.4945 9.4525 10.5127 9.46984 10.5301C9.48719 10.5474 9.50547 10.5643 9.52422 10.5798C9.54344 10.5952 9.56312 10.6098 9.58375 10.6234C9.60391 10.637 9.625 10.6496 9.64656 10.6613C9.66813 10.6726 9.69063 10.6829 9.71313 10.6923C9.73563 10.7016 9.75906 10.7101 9.78203 10.7171C9.80547 10.7241 9.82937 10.7302 9.85328 10.7354C9.87766 10.7401 9.90203 10.7438 9.92641 10.7462C9.95078 10.7485 9.97562 10.7499 10 10.7499C10.0244 10.7499 10.0492 10.7485 10.0736 10.7462C10.098 10.7438 10.1223 10.7401 10.1467 10.7354C10.1706 10.7302 10.1945 10.7241 10.218 10.7171C10.2409 10.7101 10.2644 10.7016 10.2869 10.6923C10.3094 10.6829 10.3319 10.6726 10.353 10.6613C10.375 10.6496 10.3961 10.637 10.4163 10.6234C10.4369 10.6098 10.4566 10.5952 10.4753 10.5798C10.4945 10.5643 10.5128 10.5474 10.5302 10.5301C10.5475 10.5127 10.5644 10.4945 10.5798 10.4757C10.5953 10.4565 10.6098 10.4368 10.6234 10.4162C10.637 10.396 10.6497 10.3749 10.6609 10.3534C10.6727 10.3318 10.683 10.3093 10.6923 10.2868C10.7017 10.2643 10.7102 10.2409 10.7172 10.2179C10.7242 10.1945 10.7303 10.1706 10.7355 10.1467C10.7402 10.1223 10.7439 10.0979 10.7463 10.0735C10.7486 10.0492 10.75 10.0243 10.75 9.99993C10.75 9.97556 10.7486 9.95071 10.7463 9.92634C10.7439 9.90196 10.7402 9.87759 10.7355 9.85321Z" fill="#8064A2"/>
+</svg>
+                  Explore
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      People-Community
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Places-Venues
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Programs-Events
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Products-Store
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Blog
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown marlef">
+                <a
+                  className="nav-link dropdown-toggle text-dark items"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                 
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2.5L20.2272 7.25V16.75L12 21.5L3.77276 16.75V7.25L12 2.5Z" fill="#8064A2"/>
+<path d="M11.6206 7.13723C11.7422 6.77269 12.2578 6.77269 12.3794 7.13723L13.2814 9.84062C13.3355 10.0028 13.4867 10.1127 13.6577 10.114L16.5075 10.1365C16.8918 10.1395 17.0511 10.6299 16.742 10.8582L14.4497 12.5514C14.3122 12.653 14.2544 12.8308 14.3059 12.9938L15.1652 15.711C15.2811 16.0774 14.864 16.3805 14.5513 16.1571L12.2326 14.5002C12.0935 14.4008 11.9065 14.4008 11.7674 14.5002L9.44871 16.1571C9.13604 16.3805 8.71889 16.0774 8.83476 15.711L9.69405 12.9938C9.7456 12.8308 9.68785 12.653 9.55032 12.5514L7.25798 10.8582C6.94887 10.6299 7.1082 10.1395 7.49248 10.1365L10.3423 10.114C10.5133 10.1127 10.6645 10.0028 10.7186 9.84062L11.6206 7.13723Z" fill="white"/>
+</svg>
+                  Hobbies
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      People-Community
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Places-Venues
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Programs-Events
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Products-Store
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Blog
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="marlef martop">
+              <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 0H2C0.9 0 0 0.9 0 2V18L7 15L14 18V2C14 0.9 13.1 0 12 0Z" fill="#8064A2"/>
+</svg>
+
+              </li>
+              <li className="marlef martop">
+              <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.00005 20C9.10005 20 10.0001 19.1 10.0001 18H6.00005C6.00005 19.1 6.89005 20 8.00005 20ZM14.0001 14V9C14.0001 5.93 12.3601 3.36 9.50005 2.68V2C9.50005 1.17 8.83005 0.5 8.00005 0.5C7.17005 0.5 6.50005 1.17 6.50005 2V2.68C3.63005 3.36 2.00005 5.92 2.00005 9V14L0.710051 15.29C0.0800515 15.92 0.520051 17 1.41005 17H14.5801C15.4701 17 15.9201 15.92 15.2901 15.29L14.0001 14Z" fill="#8064A2"/>
+</svg>
+              </li>
+              <li className="marlef martop">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.9198 7.24996V7.37996L20.4598 12.78C20.2873 13.4209 19.907 13.9865 19.3786 14.3882C18.8503 14.7899 18.2036 15.0051 17.5398 15H9.88982C9.13882 15.003 8.41398 14.7243 7.85853 14.2188C7.30308 13.7133 6.95741 13.0179 6.88982 12.27L6.23982 4.90996C6.2173 4.66064 6.10207 4.42884 5.91692 4.26035C5.73177 4.09186 5.49016 3.99895 5.23982 3.99996H3.06982C2.80461 3.99996 2.55025 3.89461 2.36272 3.70707C2.17518 3.51953 2.06982 3.26518 2.06982 2.99996C2.06982 2.73475 2.17518 2.48039 2.36272 2.29286C2.55025 2.10532 2.80461 1.99996 3.06982 1.99996H5.23982C5.99083 1.99692 6.71567 2.27566 7.27112 2.78112C7.82657 3.28659 8.17224 3.982 8.23982 4.72996V4.99996H19.9298C20.2149 4.99773 20.4971 5.05646 20.7577 5.17222C21.0182 5.28798 21.2509 5.4581 21.4403 5.67117C21.6297 5.88424 21.7714 6.13534 21.8558 6.40764C21.9402 6.67993 21.9655 6.96712 21.9298 7.24996H21.9198Z" fill="#8064A2"/>
+<path d="M9.06982 22.0001C10.4505 22.0001 11.5698 20.8808 11.5698 19.5001C11.5698 18.1193 10.4505 17.0001 9.06982 17.0001C7.68911 17.0001 6.56982 18.1193 6.56982 19.5001C6.56982 20.8808 7.68911 22.0001 9.06982 22.0001Z" fill="#8064A2"/>
+<path d="M17.0698 22.0001C18.4505 22.0001 19.5698 20.8808 19.5698 19.5001C19.5698 18.1193 18.4505 17.0001 17.0698 17.0001C15.6891 17.0001 14.5698 18.1193 14.5698 19.5001C14.5698 20.8808 15.6891 22.0001 17.0698 22.0001Z" fill="#8064A2"/>
+</svg>
+
+              </li>
+            </ul>
+            <button className="btnpurp mx-3">sign in</button>
+          </div>
         </div>
-    )
+      </nav>
+    </div>
+  );
 }
 export default Nav;

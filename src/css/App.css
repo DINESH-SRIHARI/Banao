@@ -99,6 +99,65 @@
   width: 100px;
   height: 100px;
 }
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.logo{
+  width: 293.26px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 97px;
+
+}
+.nav{
+  width: 1440px;
+height: 80px;
+}
+.nav-input{
+  width: 260px;
+height: 40px;
+margin-top: 20px;
+margin-left: 34.74px;
+border: 1px;
+background: linear-gradient(0deg, #F8F9FA, #F8F9FA),
+linear-gradient(0deg, #EBEDF0, #EBEDF0);
+}
+.nav-ser{
+  width: 40px;
+height: 40px;
+margin-top: 20px;
+border: none;
+border-radius: 0px 8px 8px 0px;
+background-color: rgba(128, 100, 162, 1);
+
+}
+.nav-svg{
+   width: 16px;
+height: 16px;
+padding: 2px 1.99px 1.99px 2px;
+border-radius: 0px 8px 8px 0px;
+}
+.nav-explo{
+  width: 107px;
+height: 24px;
+margin-top: 6px;
+margin-left: 90px;
+
+}
+.marlef{
+  margin-left: 24px;
+  margin-top: 6px;
+}
+.martop{
+  margin-top: 12px;
+}
+.btnpurp{
+  border: 1px solid rgba(128, 100, 162, 1);
+  padding: 0px 32px 0px 32px;
+  border-radius: 8px;
+  background-color:white;
+}
 @media (max-width:430px) {
   .ser{
     display: none;

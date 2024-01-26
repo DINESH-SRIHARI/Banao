@@ -1,5 +1,5 @@
 import Nav from './pages/Nav'
-import './App.css';
+import './css/App.css';
 import Top from './pages/Top'
 import Sec from './pages/Sec'
 import The from './pages/The'
